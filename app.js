@@ -19,3 +19,4 @@ document.getElementById('postButton').addEventListener('click', function() {
 		document.getElementById('response').innerHTML = JSON.stringify(data);
 	})
 });
+
