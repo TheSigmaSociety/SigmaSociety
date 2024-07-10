@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    background-color: rgb(49, 47, 47);
+    background-color: rgba(42, 93, 73, 0.54);
     margin: 0;
 }
 
 .navDiv{
     display:flex;
-    justify-content:center;
+    flex-direction:column;
+    justify-content:space-around;
+    
 }
 
 .requestDiv {
@@ -15,12 +17,14 @@ body {
     justify-content: center;
 }
 
-#aiTestButton{
+#aiTestButton, 
+#nav2,
+#nav3 {
     width:400px;
     height:40px;
     border-radius:5px;
     border-color:rgb(43, 168, 120);
-    background-color:#9FFFCB;
+    background-color:rgb(47, 218, 152);
     padding:10px;
     margin:10px;
     margin-top:20px;
