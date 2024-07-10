@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Test Flask App</title>
 </head>
 <body>
-    <button id="getButton">Test GET request</button>
-    <button id="postButton">Test POST request</button>
-    <div id="response"></div>
-
+    <div class = 'requestDiv'>
+        <a id="getButton">Test GET request</a>
+        <a id="postButton">Test POST request</a>
+    </div>
+    <div class = "responseDiv">
+        <h1 id = "response"></h1>
+    </div>
+    <div class = "bottomBar">
+        <p id = "copyright">© 2024 Sigma Society</p>
+        <p id = "names">Hugo Huang, Ishan Sharma, Omkar Page, Savannah Garrand</p>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
