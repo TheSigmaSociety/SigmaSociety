@@ -34,8 +34,9 @@ body {
     text-align: center;
     transition: 0.5s;
     font-size:20px;
-
-
+    font-style: none;
+    color: black;
+    text-decoration: none;
 }
 
 #getButton, 
