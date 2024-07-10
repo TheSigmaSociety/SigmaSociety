@@ -19,8 +19,10 @@
 // 		document.getElementById('response').innerHTML = JSON.stringify(data);
 // 	})
 // });
+
 //function that gets called apon clicking login
 IP = "http://127.0.0.1:5000" // add your ip along w/ port
+
 function logIn() {
 	userName = getUser()
 	password = getPassword()
@@ -33,9 +35,17 @@ function logIn() {
 		useResult(data)
 	})
 }
+
 function useResult(result) {
 	document.getElementById('response').innerHTML = ""
 	document.getElementById('response').innerHTML = JSON.stringify(result)
 }
-function getUser() {return document.getElementById("uname").value}
-function getPassword() {document.getElementById('psw').value}
+
+function getUser() {
+	return document.getElementById("uname").value
+}
+
+function getPassword() {
+	document.getElementById('psw').value
+}
+
