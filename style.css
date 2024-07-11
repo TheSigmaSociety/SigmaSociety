@@ -40,7 +40,7 @@ body {
 }
 
 #aiTestButton, 
-#nav2,
+#logInButton,
 #nav3 {
     width:400px;
     height:40px;
@@ -75,7 +75,8 @@ body {
     transition: 0.5s;
 }
 
-#aiTestButton:hover{
+#aiTestButton:hover,
+#logInButton:hover {
     width: 410px;
     height:41px;
     font-size:23px;
