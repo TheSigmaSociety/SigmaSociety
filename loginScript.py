@@ -11,7 +11,7 @@ class account:
     #you return a dictionary of all the actions that the user can take
     def getActions(self):
         #{functionName,actualFunction}
-        return {"addOne":self.addOne,"getVal":self.getVal()}
+        return {"addOne":self.addOne,"getVal":self.getVal}
     def addOne(self):
         self.value+=1
     def getVal(self):
@@ -27,7 +27,7 @@ def login(content):
         return jsonify(status = False,content="Invalid username. ")
     if(accounts[content["username"]][0] != content["password"]):
         return jsonify(status= False, content = "Invalid Password.")
-    return jsonify(status=True, content= "logged in as " + content['username'])
+    return jsonify(status=True)
 #is called for any general action
 def act(content):
     attempt = login(content)
@@ -37,10 +37,10 @@ def act(content):
         return attempt
     accountObj = accounts[content["username"]][1]
     #TODO loop through content's functions, parse the input, put the result into a new dictionary. Return this dictionary
-    
+
 #is called when a user wants to create a new account    
 def create(content):
-    if(content['username'] in accounts.keys):
+    if(content['username'] in accounts.keys()):
         return jsonify(result=False)
     accounts[content["username"]]  = [content["password"],account()]
     return jsonify(result=True)
