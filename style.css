@@ -1,8 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    /* Colors - to use do var(--background), var(--button), etc. */
+    --background:#737C4F;
+    --element:#A6B07E;
+    --text:#D5CB8D;
+    --spare1:#434106; 
+    --spare2:#C7A685;
+    --spare3:#6E492F;
+}
 
 body {
-    background-color: rgba(42, 93, 73, 0.54);
+    background-color: var(--background);
     margin: 0;
+    font-family: 'Raleway';
 }
 
 .navDiv{
@@ -17,20 +30,26 @@ body {
     justify-content: center;
 }
 
+.header {
+    color: var(--text);
+    font-size:50px;
+    margin:10px;
+    display:flex;
+    
+}
+
 #aiTestButton, 
 #nav2,
 #nav3 {
     width:400px;
     height:40px;
     border-radius:5px;
-    border-color:rgb(43, 168, 120);
-    background-color:rgb(47, 218, 152);
+    background-color:var(--element);
     padding:10px;
     margin:10px;
     margin-top:20px;
     line-height: 33px;
     box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.5);
-    font-family: 'Noto Serif', sans-serif;
     text-align: center;
     transition: 0.5s;
     font-size:20px;
@@ -44,8 +63,7 @@ body {
     width: 200px;
     height: 100px;
     border-radius: 10px;
-    border-color: rgb(43, 168, 120);
-    background-color: rgb(47, 218, 152);
+    background-color: var(--element);
     padding: 10px;
     margin: 10px;
     margin-top: 20px;
@@ -53,7 +71,6 @@ body {
     box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.5);
     text-align: center;
     font-size: 20px;
-    font-family: 'Noto Serif', sans-serif;
     transition: 0.5s;
 }
 
@@ -74,11 +91,10 @@ body {
 .responseDiv {
     display: flex;
     justify-content: center;
-    font-family: 'Noto Serif', sans-serif;
 }
 
 #response {
-    color: rgb(47, 218, 152);
+    color: var(--label);
 }
 
 .bottomBar {
@@ -87,16 +103,11 @@ body {
         position: fixed;
         bottom: 0px;
         width: 100%;
-        background-color: #9FFFCB;
+        background-color:var(--element);
         padding: 10px;
         overflow: hidden;
         z-index: 1;
         justify-content: space-between;
-}
-
-#copyright,
-#names {
-    font-family: 'Noto Serif', sans-serif;
 }
 
 #names {
