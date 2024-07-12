@@ -50,3 +50,22 @@ function getPassword() {
 	document.getElementById('psw').value
 }
 
+
+//fade in fade out for main page
+
+document.addEventListener("DOMContentLoaded", function() {
+	const sections = document.querySelectorAll('.mainButtons');
+	
+	const observer = new IntersectionObserver( (entries) => {
+		entries.forEach(entry => {
+			if (entry.isIntersecting){
+				entry.target.classList.add('is-visible');
+			}
+		});
+	});
+
+	sections.forEach(section => {
+		observer.observe(section);
+	});
+
+});
