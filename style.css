@@ -55,25 +55,25 @@ body {
     display:flex;
 }
 
-.mainButtons {
+.mainInformation {
+    margin-bottom:100px;
     display:flex;
     justify-content: center;
     color:var(--text);
-    margin-top:600px;
-    margin-bottom:100px;
     opacity:0;
     transform:translateY(20px);
     visibility: hidden;
     transition: opacity 1s ease-out, transform 0.6s ease-out;
 }
 
-.mainButtons.is-visible {
+.mainInformation.is-visible {
     opacity: 1;
     transform: none;
     visibility: visible;
 }
 
 #button{
+    margin-top:300px;
     width: 150px;
     height:40px;
     padding:10px;
@@ -83,6 +83,19 @@ body {
     text-align: center;
     transition:0.5s;
     font-size:23px;
+}
+
+#aboutLabel{
+    margin-top:300px;
+    margin-bottom:-90px;
+    font-size:50px;
+    text-align:center;
+}
+
+#aboutPara{
+    margin-bottom: 150px;
+    font-size:20px;
+    text-align:center;
 }
 
 #button:hover{

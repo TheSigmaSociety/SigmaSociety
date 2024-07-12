@@ -52,14 +52,18 @@ function getPassword() {
 
 
 //fade in fade out for main page
+//i acc cooked a 5 star meal on this one chat
 
 document.addEventListener("DOMContentLoaded", function() {
-	const sections = document.querySelectorAll('.mainButtons');
-	
+	const sections = document.querySelectorAll('.mainInformation');
+
 	const observer = new IntersectionObserver( (entries) => {
 		entries.forEach(entry => {
 			if (entry.isIntersecting){
 				entry.target.classList.add('is-visible');
+			}
+			else{
+				entry.target.classList.remove('is-visible');
 			}
 		});
 	});
