@@ -4,12 +4,12 @@
 
 :root{
     /* Colors - to use do var(--background), var(--button), etc. */
-    --background:#737C4F;
-    --element:#A6B07E;
-    --text:#D5CB8D;
-    --spare1:#434106; 
+    --background:#041B15;
+    --element:#22AAA1;
+    --text:#4CE0D2;
+    --spare1:#84CAE7; 
     --spare2:#C7A685;
-    --spare3:#6E492F;
+    --spare3:#136F63;
 }
 
 body {
