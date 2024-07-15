@@ -4,11 +4,12 @@ body{
     background-color:#1b263b;
     margin:0;
     font-family: 'Raleway';
+    color:#00f5d4;
 }
 
 .sideBar{
     height:100%;
-    width:0;
+    width:250px;
     position:fixed;
     z-index:1;
     top:0;
@@ -17,6 +18,7 @@ body{
     overflow-x:hidden;
     padding-top:60px;
     transition:0.5s;
+    transform: translateX(-250px);
 
 }
 
@@ -56,22 +58,58 @@ body{
     line-height:45px;
     border-radius:10px;
     font-size:25px;
-    transition:0.5s
+    transition:0.5s;
 }
 
 #navOpenButton:hover{
-    width:85px;
-    height:46px;
-    font-size:28px;
+    transform: scale(1.1);
+}
+
+.open {
+    transform: translateX(0px);
 }
 
 .aboutTitleDiv{
     display:flex;
     justify-content:center;
-    border: 3px solid #00bbf9;
+    /* border: 3px solid #00bbf9; */
 }
 
 #aboutTitle{
     padding:10px;
     margin:10px;
+    text-align:center;
+    font-size:50px;
+    background-color:#46536c;
+    width:1500px;
+    border-radius:10px;
+    
+}
+
+.aboutText{
+    display:flex;
+    justify-content:center;
+    margin-top:10px;
+    width:720px;
+    height:500px;
+    background-color:#304468;
+    text-align:center;
+    margin-left:10px;
+    border-radius:10px;
+}
+
+#whoAreWeTitle{
+    padding:10px;
+    margin:10px;
+    text-align:center;
+    font-size:30px;
+}
+
+#whoAreWeText{
+    padding:20px;
+    margin:10px;
+    font-size:20px;
+    position:absolute;
+    margin-top:75px;
+    
 }
