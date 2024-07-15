@@ -11,7 +11,25 @@ body{
     height: 97vh;
     background-color: #1b263b;
 }
+.gameTitle {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    margin:10px;
+    font-size:25px;
+    background-color:#46536c;
+    width:1000px;
+    border-radius:10px;
+}
+#Title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    color:#00f5d4;
+}
 .mainDiv {
     display: grid;
     grid-template-rows: repeat(5, 100px);

@@ -5,8 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="tejasstyle.css">
+
 </head>
 <body>
+    <div id="navBar" class="sideBar">
+        <a href="javascript:void(0)" class="closeButton" onclick="closeBar()">×</a>
+        <a></a>
+        <a class = "links" href="tejas.html">Main Page</a>
+        <a class = "links" href="logIn.html">Log In</a>
+        <a class = "links" href="index.html">Testing Page</a>
+        <a class = "links" href="aitest.html">OpenAI Testing</a>
+        <a class = "links" href="about.html">About Us</a>
+        <a class = "links" href = "sharmaGame.html">Sharma Game</a>
+    </div>
+    <a id="navOpenButton" onclick="openBar()">🔍</a>
+    <script src = "app2.js"></script>
+    <div class = "gameTitle">
+        <h1 class = "text" id="Title">Sharma game</h1>
+    </div>
+    
+    
     <div class = 'gameContainer'>
         <iframe class = 'game' src='https://flowlab.io/game/embed/2584445' frameborder='0' allowfullscreen></iframe>
     </div> 
@@ -19,9 +38,12 @@
         height: 100vh;
         width: 100vw;
         overflow: hidden;
+        background-color: #1b263b;
     }
 
     .game {
+        display: flex;
+        
         width: 1000px;
         height: 750px;
     }
