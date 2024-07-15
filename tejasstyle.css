@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color:#1b263b;
+    margin:0;
+    font-family: 'Raleway';
+    color:#00f5d4;
+}
+
 .centerer {
     display: flex;
     align-items: center;
@@ -5,7 +14,25 @@
     height: 97.5vh;
     background-color: #1b263b;
 }
+.gameTitle {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    margin:10px;
+    font-size:25px;
+    background-color:#46536c;
+    width:1000px;
+    border-radius:10px;
+}
+#Title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    color:#00f5d4;
+}
 .mainDiv {
     display: grid;
     grid-template-rows: repeat(5, 100px);
@@ -112,7 +139,10 @@
     text-align: right;
     padding-right: 10px;
 }
-
+.links:hover {
+    transform: scale(1.15);
+    color: #00f5d4
+}
 #vertical {
     writing-mode: vertical-lr;
     width: 50px;
@@ -135,4 +165,286 @@
     transform: scale(1.1);
     transition: 0.5s;
     filter: invert(100%)
+}
+
+.sideBar{
+    height:100%;
+    width:250px;
+    position:fixed;
+    z-index:1;
+    top:0;
+    left:0;
+    background-color: #273246; /*temp color*/
+    overflow-x:hidden;
+    padding-top:60px;
+    transition:0.5s;
+    transform: translateX(-250px);
+
+}
+
+.sideBar a{
+    padding:8px 8px 8px 32px;
+    text-decoration:none;
+    font-size:25px;
+    color: grey; /*temp color*/
+    display:block;
+    transition:0.3s;
+    font-family: 'Raleway';
+
+}
+
+.sideBar:hover{
+    color:#00bbf9; /*tmep color*/
+}
+
+.sideBar .closeButton{
+    color: #00bbf9;
+    position:absolute;
+    top:0;
+    right:25px;
+    font-size:36px;
+    margin-left:50px;
+}
+
+#navOpenButton{
+    background-color:#304468;
+    color:#00bbf9;
+    font-family: 'Raleway';
+    position:absolute;
+    margin-left:20px;
+    margin-top:20px;
+    width:75px;
+    height:45px;
+    text-align:center;
+    line-height:45px;
+    border-radius:10px;
+    font-size:25px;
+    transition:0.5s;
+}
+
+#navOpenButton:hover{
+    transform: scale(1.1);
+}
+
+.open {
+    transform: translateX(0px);
+}
+
+.aboutTitleDiv{
+    display:flex;
+    justify-content:center;
+    /* border: 3px solid #00bbf9; */
+    font-family: 'Raleway';
+}
+
+#aboutTitle{
+    padding:10px;
+    margin:10px;
+    text-align:center;
+    font-size:50px;
+    background-color:#46536c;
+    width:1500px;
+    border-radius:10px;
+    
+}
+
+.whoAreWeText{
+    display:flex;
+    justify-content:center;
+    margin-top:10px;
+    width:720px;
+    height:500px;
+    background-color:#304468;
+    text-align:center;
+    margin-left:10px;
+    border-radius:10px;  
+    border: 2px solid;
+    border-color:#00f5d4;  
+ 
+}
+
+#whoAreWeTitle{
+    padding:10px;
+    margin:10px;
+    text-align:center;
+    font-size:30px;
+}
+
+#whoAreWeText{
+    padding:20px;
+    margin:10px;
+    font-size:20px;
+    position:absolute;
+    margin-top:75px;
+    
+}
+
+.membersText{
+    display:flex;
+    justify-content:center;
+    margin-top:10px;
+    width:720px;
+    height:500px;
+    background-color:#304468;
+    text-align:center;
+    margin-left:785px;
+    border-radius:10px;
+    border: 2px solid;
+    border-color:#00f5d4;
+}
+
+#membersTitle{
+    padding:10px;
+    margin:10px;
+    text-align:center;
+    font-size:30px;
+}
+
+#membersText{
+    padding:20px;
+    margin:10px;
+    font-size:20px;
+    position:absolute;
+    margin-top:75px;
+    
+}
+
+.aboutLogoImage{
+    padding:10px;
+    margin:10px;
+    position:absolute;
+    display:flex;
+}
+
+#aboutLogo{
+    margin-left:900px;
+    margin-top:-550px;
+}
+
+#tejas{
+    display:flex;
+    position:absolute;
+    text-align:center;
+    margin:10px;
+    padding:10px;
+    font-size:20px;
+    color:#009ff5;
+    text-decoration:none;
+    margin-top:100px;
+}
+
+#ishan{
+    display:flex;
+    position:absolute;
+    text-align:center;
+    margin:10px;
+    padding:10px;
+    font-size:20px;
+    color:#009ff5;
+    text-decoration:none;
+    margin-top:150px;
+}
+
+#hugo{
+    display:flex;
+    position:absolute;
+    text-align:center;
+    margin:10px;
+    padding:10px;
+    font-size:20px;
+    color:#009ff5;
+    text-decoration:none;
+    margin-top:200px;
+}
+
+#omkar{
+    display:flex;
+    position:absolute;
+    text-align:center;
+    margin:10px;
+    padding:10px;
+    font-size:20px;
+    color:#009ff5;
+    text-decoration:none;
+    margin-top:250px;
+}
+
+#dharveen{
+    display:flex;
+    position:absolute;
+    text-align:center;
+    margin:10px;
+    padding:10px;
+    font-size:20px;
+    color:#009ff5;
+    text-decoration:none;
+    margin-top:300px;
+}
+
+#savannah{
+    display:flex;
+    position:absolute;
+    text-align:center;
+    margin:10px;
+    padding:10px;
+    font-size:20px;
+    color:#009ff5;
+    text-decoration:none;
+    margin-top:350px;
+}
+
+.pastProjects{
+    display:flex;
+    justify-content:center;
+    margin-top:10px;
+    width:720px;
+    height:500px;
+    background-color:#304468;
+    text-align:center;
+    margin-left:10px;
+    border-radius:10px;   
+    border: 2px solid;
+    border-color:#00f5d4; 
+}
+
+#pastProjectsTitle{
+    padding:10px;
+    margin:10px;
+    text-align:center;
+    font-size:30px;
+}
+
+#pastProjectsText{
+    padding:10px;
+    margin:10px;
+    text-align:center;
+    font-size:30px;
+    margin-top:60px;
+    display:flex;
+    position:absolute;
+    font-size:20px;
+}
+
+#priorityPlanner{
+    display:flex;
+    position:absolute;
+    text-align:center;
+    margin:10px;
+    padding:10px;
+    font-size:20px;
+    color:#009ff5;
+    text-decoration:none;
+    margin-top:130px;
+}
+
+#classCompanion{
+    display:flex;
+    position:absolute;
+    text-align:center;
+    margin:10px;
+    padding:10px;
+    font-size:20px;
+    color:#009ff5;
+    text-decoration:none;
+    margin-top:180px;
 }
