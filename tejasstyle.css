@@ -1,0 +1,132 @@
+.centerer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 97vh;
+    background-color: #1b263b;
+}
+
+.mainDiv {
+    display: grid;
+    grid-template-rows: repeat(5, 100px);
+    grid-template-columns: repeat(5, 100px);
+    /* border: 2px solid #ccc; */
+    height: 525px;
+    width: 525px;
+    grid-gap: 5px;
+}
+
+.items {
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(56, 67, 71);
+    position: relative;
+}
+
+#item1 { 
+    grid-area: 1 / 1 / 3 / 3;
+    background-color: #9b5de5;
+}
+
+#item2 {
+    grid-area: 1 / 3 / 3 / 6;
+    background-color: #f15bb5;
+}
+
+#item3 {
+    grid-area: 3 / 1 / 5 / 5;
+    background-color: #fee440;
+    display: flex;
+}
+
+#item4 {
+    grid-area: 3 / 5 / 5 / 6;
+    background-color: #00bbf9;
+    background:
+      conic-gradient(from -60deg at 50% calc(100%/3),#474bff 0 120deg,#0000 0),
+      conic-gradient(from 120deg at 50% calc(200%/3),#474bff 0 120deg,#0000 0),
+      conic-gradient(from  60deg at calc(200%/3),#474bff 60deg,#adafff 0 120deg,#0000 0),
+      conic-gradient(from 180deg at calc(100%/3),#fff 60deg,#474bff 0 120deg,#0000 0),
+      linear-gradient(90deg,#fff calc(100%/6),#adafff 0 50%,
+      #fff 0 calc(500%/6), #adafff 0);
+    background-size: 105px 60px;
+}
+
+#item5 {
+    grid-area: 5 / 1 / 6 / 6;
+    background-color: #00f5d4;
+}
+
+.text {
+    font-family: 'Cabinet Grotesk', sans-serif;
+}
+
+#alignLeft {
+    text-align: left;
+    width: 20px;
+    padding-left: 5px;
+    margin-top: 5px;
+    line-height: 40px;
+}
+
+#ssLogo {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+}
+
+/* .link {
+    text-decoration: none;
+    color: black;
+    background-color: blanchedalmond;
+    font-size: 20px;
+    padding:10px;
+    border-radius: 10px;
+    font-family: 'Cabinet Grotesk', sans-serif;
+} */
+
+#textContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+}
+
+#namesDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.names {
+    line-height: 0px;
+    font-size: 20px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+#vertical {
+    writing-mode: vertical-lr;
+    width: 50px;
+    font-size: 45px;
+    padding: 5px 5px 5px 5px;
+}
+
+#slogan {
+    line-height: 60px;
+    font-style: italic;
+}
+
+#github {
+    width: 100px;
+    height: 100px;
+    transition: 0.5s;
+}
+
+#github:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    filter: invert(100%)
+}
