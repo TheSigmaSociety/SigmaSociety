@@ -68,6 +68,7 @@ body{
 .aboutTitleDiv{
     display:flex;
     justify-content:center;
+    border: 3px solid #00bbf9;
 }
 
 #aboutTitle{
