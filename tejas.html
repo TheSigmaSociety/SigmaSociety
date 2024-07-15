@@ -8,14 +8,25 @@
     <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <div id="navBar" class="sideBar">
+        <a href="javascript:void(0)" class="closeButton" onclick="closeBar()">×</a>
+        <a></a>
+        <a href="logIn.html">Log In</a>
+        <a href="index.html">Testing Page</a>
+        <a href="aitest.html">OpenAI Testing</a>
+        <a href="about.html">About Us</a>
+    </div>
+    <a id="navOpenButton" onclick="openBar()">🔍</a>
+
     <div class = "centerer">
+        
         <div class = 'mainDiv'>
             <div class = "items" id = "item1">
                 <h1 class = 'text'>Our Repo</h1>
                 <a class = 'link' href = 'https://github.com/ilovecrayons/test'><img id = "github" src = "github.png"></a>
             </div>
             <div class = "items" id = "item2">
-                <h1 class = 'text' id = 'alignLeft'>Sigmas make their own fate.</h1>
                 <img src = "SigmaSocietyLogoNoText-removebg-preview.png" id = 'ssLogo'>
             </div>
             <div class = "items" id = "item3">
@@ -40,3 +51,5 @@
     </div>
     
 </body>
+
+<script src="app2.js"></script>
