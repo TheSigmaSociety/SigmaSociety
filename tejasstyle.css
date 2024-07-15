@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 97vh;
+    height: 97.5vh;
     background-color: #1b263b;
 }
 
@@ -21,6 +21,12 @@
     border-radius: 5px;
     background-color: rgb(56, 67, 71);
     position: relative;
+    transition: 0.5s;
+}
+
+.items:hover {
+    box-shadow: 5px 5px 10px #1b263b inset;
+    box-shadow: 5px 5px 10px #1b263b inset;
 }
 
 #item1 { 
