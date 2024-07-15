@@ -112,7 +112,10 @@ body{
     text-align: right;
     padding-right: 10px;
 }
-
+.links:hover {
+    transform: scale(1.15);
+    color: #00f5d4
+}
 #vertical {
     writing-mode: vertical-lr;
     width: 50px;
@@ -156,7 +159,7 @@ body{
     padding:8px 8px 8px 32px;
     text-decoration:none;
     font-size:25px;
-    color:#00f5d4; /*temp color*/
+    color: grey; /*temp color*/
     display:block;
     transition:0.3s;
     font-family: 'Raleway';
@@ -168,6 +171,7 @@ body{
 }
 
 .sideBar .closeButton{
+    color: #00bbf9;
     position:absolute;
     top:0;
     right:25px;
