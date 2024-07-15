@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color:#1b263b;
+    margin:0;
+    font-family: 'Raleway';
+}
+
+.sideBar{
+    height:100%;
+    width:0;
+    position:fixed;
+    z-index:1;
+    top:0;
+    left:0;
+    background-color: #273246; /*temp color*/
+    overflow-x:hidden;
+    padding-top:60px;
+    transition:0.5s;
+
+}
+
+.sideBar a{
+    padding:8px 8px 8px 32px;
+    text-decoration:none;
+    font-size:25px;
+    color:#00f5d4; /*temp color*/
+    display:block;
+    transition:0.3s;
+    font-family: 'Raleway';
+
+}
+
+.sideBar:hover{
+    color:#00bbf9; /*tmep color*/
+}
+
+.sideBar .closeButton{
+    position:absolute;
+    top:0;
+    right:25px;
+    font-size:36px;
+    margin-left:50px;
+}
+
+#navOpenButton{
+    background-color:#304468;
+    color:#00bbf9;
+    font-family: 'Raleway';
+    position:absolute;
+    margin-left:20px;
+    margin-top:20px;
+    width:75px;
+    height:45px;
+    text-align:center;
+    line-height:45px;
+    border-radius:10px;
+    font-size:25px;
+    transition:0.5s
+}
+
+#navOpenButton:hover{
+    width:85px;
+    height:46px;
+    font-size:28px;
+}
+
+.aboutTitleDiv{
+    display:flex;
+    justify-content:center;
+}
+
+#aboutTitle{
+    padding:10px;
+    margin:10px;
+}
