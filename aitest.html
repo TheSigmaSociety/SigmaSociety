@@ -8,19 +8,27 @@
 </head>
 <body>
 
-
-    <div class = "navDiv">
-        <a id="aiTestButton" onclick="openAiTest()">OpenAI API Testing</a>
-        <a id="logInButton" href="logIn.html">Log In Testing</a>
-        <a id="nav3">Navigation Button 2</a>
+    <div id="navBar" class="sideBar">
+        <a href="javascript:void(0)" class="closeButton" onclick="closeBar()">×</a>
+        <a></a>
+        <a class = "links" href="main.html">Main Page</a>
+        <a class = "links" href="logIn.html">Log In</a>
+        <a class = "links" href="backendTesting.html">Backend Testing Page</a>
+        <a class = "links" href="aitest.html">OpenAI Testing</a>
+        <a class = "links" href="about.html">About Us</a>
+        <a class = "links" href = "sharmaGame.html">Sharma Game</a>
     </div>
+    <a id="navOpenButton" onclick="openBar()">🔍</a>
+
+    <div class = "titleDiv">
+        <p id = "gameTitle">OpenAI Testing</p>
+    </div>
+
     <input placeholder="Enter Query" id="Query">
     
     <div class = "responseDiv">
         <h1 id = "response"></h1>
     </div>
-    
-    
 
     <div class = "bottomBar">
         <p id = "copyright">© 2024 Sigma Society</p>

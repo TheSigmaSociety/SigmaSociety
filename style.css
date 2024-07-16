@@ -25,9 +25,10 @@ body{
 }
 
 .requestDiv {
-    margin-top:100px;
+    margin-top:250px;
     display: flex;
     justify-content: center;
+    color: var(--font2);
 }
 
 .header {
@@ -529,4 +530,22 @@ body{
     display: flex;
     width: 1000px;
     height: 750px;
+}
+
+#Query{
+    background-color:var(--element);
+    border-radius:10px;
+    width:500px;
+    height:30px;
+    font-size:15px;
+    color:var(--font);
+    margin:10px;
+    padding:10px;
+    margin-left:500px;
+    margin-top:100px;
+    
+}
+
+::placeholder{
+    color:var(--font2);
 }
