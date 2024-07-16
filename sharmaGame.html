@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="tejasstyle.css">
+    <script src = "app2.js"></script>
 
 </head>
 <body>
@@ -20,23 +21,30 @@
         <a class = "links" href = "sharmaGame.html">Sharma Game</a>
     </div>
     <a id="navOpenButton" onclick="openBar()">🔍</a>
-    <script src = "app2.js"></script>
-    <div class = "gameTitle">
-        <h1 class = "text" id="Title">Sharma game</h1>
+    <div class = "gameTitleDiv">
+        <h1 class = "text">Sharma game</h1>
     </div>
     
     
     <div class = 'gameContainer'>
         <iframe class = 'game' src='https://flowlab.io/game/embed/2584445' frameborder='0' allowfullscreen></iframe>
     </div> 
+    <div class = "bottomBar">
+        <a href = "tejas.html">
+            <img src = "SigmaSocietyLogoNoText-removebg-preview.png" id = 'copyRightLogo' alt="SigmaSociety Logo">
+
+        </a>
+        <p class = "text" id = "copyright">© 2024 Sigma Society:</p>
+        <p class = "text" id = "names">Hugo Huang, Ishan Sharma, Omkar Page, Savannah Garrand</p>
+    </div>
 </body>
 <style>
     .gameContainer {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 98vh;
-        width: 98vw;
+        height: 820px;
+        
         overflow: hidden;
         background-color: #1b263b;
     }
