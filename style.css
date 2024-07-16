@@ -50,7 +50,7 @@ body{
     margin: 10px;
     margin-top: -230px;
     line-height: 100px;
-    box-shadow: 0px 0px 3px 3px var(--titleBar);
+    box-shadow: 0px 0px 3px 3px var(--font);
     text-align: center;
     font-size: 20px;
     transition: 0.5s;
