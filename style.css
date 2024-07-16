@@ -40,27 +40,6 @@ body{
 
 }
 
-
-#aiTestButton, 
-#logInButton,
-#nav3 {
-    width:400px;
-    height:40px;
-    border-radius:5px;
-    background-color:var(--element);
-    padding:10px;
-    margin:10px;
-    margin-top:20px;
-    line-height: 33px;
-    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    transition: 0.5s;
-    font-size:20px;
-    font-style: none;
-    color: black;
-    text-decoration: none;
-}
-
 #getButton, 
 #postButton {
     width: 200px;
@@ -69,12 +48,13 @@ body{
     background-color: var(--element);
     padding: 10px;
     margin: 10px;
-    margin-top: 20px;
+    margin-top: -230px;
     line-height: 100px;
-    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 3px 3px var(--titleBar);
     text-align: center;
     font-size: 20px;
     transition: 0.5s;
+    color:var(--font);
 }
 
 #aiTestButton:hover,
@@ -89,6 +69,7 @@ body{
     width: 210px;
     height: 101px;
     font-size: 23px;
+    color:var(--font2)
 }
 
 
@@ -543,9 +524,84 @@ body{
     padding:10px;
     margin-left:500px;
     margin-top:100px;
-    
+    border-style:solid;
+    transition:0.5s;
+}
+
+#Query:hover{
+    width:510px;
+    height:40px;
 }
 
 ::placeholder{
     color:var(--font2);
 }
+
+.logInContainer{
+    display:flex;
+    justify-content:center;
+    margin-top:10px;
+    width:300px;
+    height:400px;
+    background-color:var(--element);
+    margin-left:610px;
+    border-radius:10px;  
+    border: 2px solid;
+    border-color:var(--font);  
+}
+
+#username,
+#password{
+    background-color:var(--element);
+    border-radius:10px;
+    height:15px;
+    width:250px;
+    color:var(--font);
+    margin:10px;
+    padding:10px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    position:absolute;
+    font-size:25px;
+    transition:0.5s;
+    
+}
+
+#password{
+    margin-top:75px;
+}
+
+#username:hover,
+#password:hover{
+    width:260px;
+    height:25px;
+}
+
+#logInButton{
+    margin:10px;
+    padding:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:absolute;
+    margin-top:300px;
+    background-color:var(--background);
+    color:var(--font);
+    width:150px;
+    height:30px;
+    border-radius:10px;
+    transition:0.5s;
+    font-size:25px;
+}
+
+#logInButton:hover{
+    width:160px;
+    height:31px;
+    color:var(--font2)
+}
+
+
+
+
+

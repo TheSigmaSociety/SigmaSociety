@@ -7,16 +7,35 @@
     <title>Log In Page</title>
 </head>
 <body>
-    <div class="container">
-        <label for="uname" class><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" id="uname">
-    
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" id="psw">
-    
-        <button onclick = "logIn()">Login</button>
-        
+
+    <div id="navBar" class="sideBar">
+        <a href="javascript:void(0)" class="closeButton" onclick="closeBar()">×</a>
+        <a></a>
+        <a class = "links" href="main.html">Main Page</a>
+        <a class = "links" href="logIn.html">Log In</a>
+        <a class = "links" href="backendTesting.html">Backend Testing Page</a>
+        <a class = "links" href="aitest.html">OpenAI Testing</a>
+        <a class = "links" href="about.html">About Us</a>
+        <a class = "links" href = "sharmaGame.html">Sharma Game</a>
     </div>
+    <a id="navOpenButton" onclick="openBar()">🔍</a>
+
+    <div class = "titleDiv">
+        <p id = "gameTitle">Log In Testing</p>
+    </div>
+
+    <div class="logInContainer">
+        <input type="text" placeholder="Enter Username" id="username">
+        <input type="text" placeholder="Enter Password" id="password">
+        <a id="logInButton">Log In</a>
+    </div>
+
+
+    <div class = "bottomBar">
+        <p id = "copyright">© 2024 Sigma Society</p>
+        <p id = "names">Hugo Huang, Ishan Sharma, Omkar Page, Savannah Garrard</p>
+    </div>
+
     <div id="response"></div>
 
     <script src="app.js"></script>

@@ -43,11 +43,11 @@ function useResult(result) {
 }
 
 function getUser() {
-	return document.getElementById("uname").value
+	return document.getElementById("username").value
 }
 
 function getPassword() {
-	document.getElementById('psw').value
+	document.getElementById('password').value
 }
 
 
