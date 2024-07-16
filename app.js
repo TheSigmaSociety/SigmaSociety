@@ -51,25 +51,25 @@ function getPassword() {
 }
 
 
-//fade in fade out for main page
-//i acc cooked a 5 star meal on this one chat
+function openBar(){
+    // document.getElementById("navBar").style.width = "250px";
+    document.getElementById("navBar").classList.add("open");
+}
 
-document.addEventListener("DOMContentLoaded", function() {
-	const sections = document.querySelectorAll('.mainInformation');
+function closeBar(){
+    // document.getElementById("navBar").style.width = "0";
+    document.getElementById("navBar").classList.remove("open");
+}
 
-	const observer = new IntersectionObserver( (entries) => {
-		entries.forEach(entry => {
-			if (entry.isIntersecting){
-				entry.target.classList.add('is-visible');
-			}
-			else{
-				entry.target.classList.remove('is-visible');
-			}
-		});
-	});
+function openAiTest() {
+    x = document.getElementById("Query").value
+    document.getElementById("Query").value = ""
+	fetch(IP + "/post", {
+		method: "POST",
+		headers: {"Content-Type":"application/json"},
+        body: JSON.stringify({content: x})
+	}).then(response => response.json()).then(data => {
+		document.getElementById("response").innerHTML = data["result"]
 
-	sections.forEach(section => {
-		observer.observe(section);
-	});
-
-});
+	})
+}
