@@ -8,10 +8,21 @@
 </head>
 <body>
 
-    <div class = "header">
-        <a id="pageHeader">Testing Website</a>
+    <div id="navBar" class="sideBar">
+        <a href="javascript:void(0)" class="closeButton" onclick="closeBar()">×</a>
+        <a></a>
+        <a class = "links" href="main.html">Main Page</a>
+        <a class = "links" href="logIn.html">Log In</a>
+        <a class = "links" href="backendTesting.html">Backend Testing Page</a>
+        <a class = "links" href="aitest.html">OpenAI Testing</a>
+        <a class = "links" href="about.html">About Us</a>
+        <a class = "links" href = "sharmaGame.html">Sharma Game</a>
     </div>
+    <a id="navOpenButton" onclick="openBar()">🔍</a>
 
+    <div class = "titleDiv">
+        <p id = "gameTitle">Backend Testing</p>
+    </div>
     <div class = 'requestDiv'>
         <a id="getButton">Test GET request</a>
         <a id="postButton">Test POST request</a>
@@ -21,10 +32,6 @@
         <h1 id = "response"></h1>
     </div>
     
-    <div class = "navDiv">
-        <a id="aiTestButton" href="aitest.html">OpenAI API Testing</a>
-        <a id="logInButton" href="logIn.html">Log In Testing</a>
-    </div>
 
     <div class = "bottomBar">
         <p id = "copyright">© 2024 Sigma Society</p>
