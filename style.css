@@ -1,21 +1,20 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap'); */
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-    /* Colors - to use do var(--background), var(--button), etc. */
-    --background:#041B15;
-    --element:#22AAA1;
-    --text:#4CE0D2;
-    --spare1:#84CAE7; 
-    --spare2:#C7A685;
-    --spare3:#136F63;
+    --background:#1b263b;
+    --font:#00f5d4;
+    --font2:#00bbf9;
+    --element:#304468;
+    --titleBar:#46536c;
+    --mainPageItem:rgb(56, 67, 71);
+    --sideBar:#273246;
 }
 
-body {
-    background-color: var(--background);
-    margin: 0;
+body{
+    background-color:var(--background);
+    margin:0;
     font-family: 'Raleway';
+    color:var(--font);
 }
 
 .navDiv{
@@ -31,7 +30,7 @@ body {
 }
 
 .header {
-    color: var(--text);
+    color: var(--font);
     font-size:50px;
     margin:10px;
     display:flex;
@@ -39,72 +38,6 @@ body {
 
 }
 
-.mainHeader {
-    color: var(--text);
-    font-size:50px;
-    display:flex;
-    justify-content: center;
-    margin-top: 200px;
-    margin-bottom:-50px;
-}
-
-.mainSubHeader{
-    color:var(--text);
-    font-size:40px;
-    justify-content: center;
-    display:flex;
-}
-
-.mainInformation {
-    margin-bottom:100px;
-    display:flex;
-    justify-content: center;
-    color:var(--text);
-    opacity:0;
-    transform:translateY(20px);
-    visibility: hidden;
-    transition: opacity 1s ease-out, transform 0.6s ease-out;
-}
-
-.mainInformation.is-visible {
-    opacity: 1;
-    transform: none;
-    visibility: visible;
-}
-
-#button{
-    margin-top:300px;
-    width: 150px;
-    height:40px;
-    padding:10px;
-    margin:10px;
-    line-height:35px;
-    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    transition:0.5s;
-    font-size:23px;
-}
-
-#aboutLabel{
-    margin-top:300px;
-    margin-bottom:-90px;
-    font-size:50px;
-    text-align:center;
-}
-
-#aboutPara{
-    margin-bottom: 150px;
-    font-size:20px;
-    text-align:center;
-}
-
-#button:hover{
-    width:160px;
-    height:41px;
-    font-size:23px;
-    background-color: var(--element);
-    color:var(--spare3);
-}
 
 #aiTestButton, 
 #logInButton,
@@ -163,23 +96,441 @@ body {
 }
 
 #response {
-    color: var(--label);
+    color: var(--font2);
+}
+
+.centerer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 97.5vh;
+    background-color: var(--background);
 }
 
 .bottomBar {
-        display: flex;
-        align-items: center;
-        position: fixed;
-        bottom: 0px;
-        width: 100%;
-        background-color:var(--element);
-        padding: 10px;
-        overflow: hidden;
-        z-index: 1;
-        justify-content: space-between;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    width: 98.5%;
+    background-color:var(--element);
+    border-radius:10px;
+    padding: 10px;
+    overflow: hidden;
+    z-index: 1;
+    justify-content: space-between;
 }
 
-#names {
-    margin-right: 20px;
+.gameTitleDiv{
+    display:flex;
+    justify-content:center;
+    font-family: 'Raleway';
 }
 
+#gameTitle{
+    padding:10px;
+    margin:10px;
+    text-align:center;
+    font-size:50px;
+    background-color:var(--titleBar);
+    width:1500px;
+    border-radius:10px;
+}
+
+
+.mainDiv {
+    display: grid;
+    grid-template-rows: repeat(5, 100px);
+    grid-template-columns: repeat(5, 100px);
+    /* border: 2px solid #ccc; */
+    height: 525px;
+    width: 525px;
+    grid-gap: 5px;
+}
+
+.items {
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--mainPageItem);
+    position: relative;
+    transition: 0.5s;
+}
+
+.items:hover {
+    box-shadow: 5px 5px 10px var(--background) inset;
+    box-shadow: 5px 5px 10px var(--background) inset;
+}
+
+#item1 { 
+    grid-area: 1 / 1 / 3 / 3;
+    background-color: #9b5de5;
+}
+
+#item2 {
+    grid-area: 1 / 3 / 3 / 6;
+    background-color: #f15bb5;
+}
+
+#item3 {
+    grid-area: 3 / 1 / 5 / 5;
+    background-color: #fee440;
+    display: flex;
+}
+
+#item4 {
+    grid-area: 3 / 5 / 5 / 6;
+    background-color: var(--font2);
+    background:
+      conic-gradient(from -60deg at 50% calc(100%/3),#474bff 0 120deg,#0000 0),
+      conic-gradient(from 120deg at 50% calc(200%/3),#474bff 0 120deg,#0000 0),
+      conic-gradient(from  60deg at calc(200%/3),#474bff 60deg,#adafff 0 120deg,#0000 0),
+      conic-gradient(from 180deg at calc(100%/3),#fff 60deg,#474bff 0 120deg,#0000 0),
+      linear-gradient(90deg,#fff calc(100%/6),#adafff 0 50%,
+      #fff 0 calc(500%/6), #adafff 0);
+    background-size: 105px 60px;
+}
+
+#item5 {
+    grid-area: 5 / 1 / 6 / 6;
+    background-color: var(--font);
+}
+
+.text {
+    font-family: 'Cabinet Grotesk', sans-serif;
+}
+
+#alignLeft {
+    text-align: left;
+    width: 20px;
+    padding-left: 5px;
+    margin-top: 5px;
+    line-height: 40px;
+}
+
+#ssLogo {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+}
+
+
+#textContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+}
+
+#namesDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#copyright{
+    margin-left:-100;
+}
+
+#copyRightLogo {
+    width: 50px;
+}
+#copyRightLogo:hover {
+    transition: 0.5s;
+    filter: invert(50%);
+}
+
+.names {
+    line-height: 0px;
+    font-size: 20px;
+    text-align: right;
+    padding-right: 10px;
+}
+.links:hover {
+    transform: scale(1.15);
+    color: var(--font)
+}
+#vertical {
+    writing-mode: vertical-lr;
+    width: 50px;
+    font-size: 45px;
+    padding: 5px 5px 5px 5px;
+}
+
+#slogan {
+    line-height: 60px;
+    font-style: italic;
+}
+
+#github {
+    width: 100px;
+    height: 100px;
+    transition: 0.5s;
+}
+
+#github:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    filter: invert(100%)
+}
+
+.sideBar{
+    height:100%;
+    width:250px;
+    position:fixed;
+    z-index:1;
+    top:0;
+    left:0;
+    background-color: var(--sideBar);
+    overflow-x:hidden;
+    padding-top:60px;
+    transition:0.5s;
+    transform: translateX(-250px);
+
+}
+
+.sideBar a{
+    padding:8px 8px 8px 32px;
+    text-decoration:none;
+    font-size:25px;
+    color: grey; /*temp color*/
+    display:block;
+    transition:0.3s;
+    font-family: 'Raleway';
+
+}
+
+.sideBar:hover{
+    color:var(--font2); /*tmep color*/
+}
+
+.sideBar .closeButton{
+    color: var(--font2);
+    position:absolute;
+    top:0;
+    right:25px;
+    font-size:36px;
+    margin-left:50px;
+}
+
+#navOpenButton{
+    background-color:var(--element);
+    color:var(--font2);
+    font-family: 'Raleway';
+    position:absolute;
+    margin-left:20px;
+    margin-top:20px;
+    width:75px;
+    height:45px;
+    text-align:center;
+    line-height:45px;
+    border-radius:10px;
+    font-size:25px;
+    transition:0.5s;
+}
+
+#navOpenButton:hover{
+    transform: scale(1.1);
+}
+
+.open {
+    transform: translateX(0px);
+}
+
+.aboutTitleDiv{
+    display:flex;
+    justify-content:center;
+    font-family: 'Raleway';
+}
+
+#aboutTitle{
+    padding:10px;
+    margin:10px;
+    text-align:center;
+    font-size:50px;
+    background-color:var(--titleBar);
+    width:1500px;
+    border-radius:10px;
+}
+
+.whoAreWeText{
+    display:flex;
+    justify-content:center;
+    margin-top:10px;
+    width:720px;
+    height:500px;
+    background-color:var(--element);
+    text-align:center;
+    margin-left:10px;
+    border-radius:10px;  
+    border: 2px solid;
+    border-color:var(--font);  
+ 
+}
+
+#whoAreWeTitle{
+    padding:10px;
+    margin:10px;
+    text-align:center;
+    font-size:30px;
+}
+
+#whoAreWeText{
+    padding:20px;
+    margin:10px;
+    font-size:20px;
+    position:absolute;
+    margin-top:75px;
+    
+}
+
+.membersText{
+    display:flex;
+    justify-content:center;
+    margin-top:10px;
+    width:720px;
+    height:500px;
+    background-color:var(--element);
+    text-align:center;
+    margin-left:785px;
+    border-radius:10px;
+    border: 2px solid;
+    border-color:var(--font);
+}
+
+#membersTitle{
+    padding:10px;
+    margin:10px;
+    text-align:center;
+    font-size:30px;
+}
+
+#membersText{
+    padding:20px;
+    margin:10px;
+    font-size:20px;
+    position:absolute;
+    margin-top:75px;
+    
+}
+
+.aboutLogoImage{
+    padding:10px;
+    margin:10px;
+    position:absolute;
+    display:flex;
+}
+
+#aboutLogo{
+    margin-left:900px;
+    margin-top:-550px;
+}
+
+#tejas,
+#ishan,
+#hugo,
+#omkar,
+#dharveen,
+#savannah{
+    display:flex;
+    position:absolute;
+    text-align:center;
+    margin:10px;
+    padding:10px;
+    font-size:20px;
+    color:#009ff5;
+    text-decoration:none;
+    transition:0.5s;
+}
+
+#tejas{
+    margin-top:100px;
+}
+
+#ishan{
+    margin-top:150px;
+}
+
+#hugo{
+    margin-top:200px;
+}
+
+#omkar{
+    margin-top:250px;
+}
+
+#dharveen{
+    margin-top:300px;
+}
+
+#savannah{
+    margin-top:350px;
+}
+
+.pastProjects{
+    display:flex;
+    justify-content:center;
+    margin-top:10px;
+    width:720px;
+    height:500px;
+    background-color:var(--element);
+    text-align:center;
+    margin-left:10px;
+    border-radius:10px;   
+    border: 2px solid;
+    border-color:var(--font); 
+}
+
+#pastProjectsTitle{
+    padding:10px;
+    margin:10px;
+    text-align:center;
+    font-size:30px;
+}
+
+#pastProjectsText{
+    padding:10px;
+    margin:10px;
+    text-align:center;
+    font-size:30px;
+    margin-top:60px;
+    display:flex;
+    position:absolute;
+    font-size:20px;
+}
+
+#priorityPlanner,
+#classCompanion{
+    display:flex;
+    position:absolute;
+    text-align:center;
+    margin:10px;
+    padding:10px;
+    font-size:20px;
+    color:#009ff5;
+    text-decoration:none;
+    transition:0.5s;
+}
+
+#priorityPlanner{
+    margin-top:130px;
+}
+
+#classCompanion{
+    margin-top:180px;
+}
+
+.gameContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 820px;
+    overflow: hidden;
+}
+
+.game {
+    display: flex;
+    width: 1000px;
+    height: 750px;
+}

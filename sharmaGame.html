@@ -5,45 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="tejasstyle.css">
-    <script src = "app2.js"></script>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class = "gameTitleDiv">
-        <h1 class = "text">Sharma game</h1>
+    <div id="navBar" class="sideBar">
+        <a href="javascript:void(0)" class="closeButton" onclick="closeBar()">×</a>
+        <a></a>
+        <a class = "links" href="main.html">Main Page</a>
+        <a class = "links" href="logIn.html">Log In</a>
+        <a class = "links" href="index.html">Testing Page</a>
+        <a class = "links" href="aitest.html">OpenAI Testing</a>
+        <a class = "links" href="about.html">About Us</a>
+        <a class = "links" href = "sharmaGame.html">Sharma Game</a>
     </div>
-    
+    <a id="navOpenButton" onclick="openBar()">🔍</a>
+
+    <div class = "gameTitleDiv">
+        <p id = "gameTitle">Sharma game</p>
+    </div>
     
     <div class = 'gameContainer'>
         <iframe class = 'game' src='https://flowlab.io/game/embed/2584445' frameborder='0' allowfullscreen></iframe>
     </div> 
+
     <div class = "bottomBar">
-        <a href = "tejas.html">
-            <img src = "SigmaSocietyLogoNoText-removebg-preview.png" id = 'copyRightLogo' alt="SigmaSociety Logo">
-
-        </a>
-        <p class = "text" id = "copyright">© 2024 Sigma Society:</p>
-        <p class = "text" id = "names">Hugo Huang, Ishan Sharma, Omkar Page, Savannah Garrand</p>
+        <p id = "copyright">© 2024 Sigma Society</p>
+        <p id = "names">Hugo Huang, Ishan Sharma, Omkar Page, Savannah Garrand</p>
     </div>
-</body>
-<style>
-    .gameContainer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 820px;
-        
-        overflow: hidden;
-        background-color: #1b263b;
-    }
 
-    .game {
-        display: flex;
-        
-        width: 1000px;
-        height: 750px;
-    }
-</style>
+</body>
+<script src = "app.js"></script>
 </html>
